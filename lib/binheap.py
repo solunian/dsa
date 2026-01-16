@@ -5,7 +5,7 @@ from lib.generics import Hashable
 # left(i) = i * 2 + 1, right(i) = i * 2 + 2
 
 
-class BinHeapPQ[T: Hashable]:
+class PriorityQueue[T: Hashable]:
     def _heapify_up(self, i: int):
         while i > 0:
             parent_i = (i - 1) // 2

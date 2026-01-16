@@ -1,6 +1,6 @@
-from lib.priority_queue import BinHeapPQ
+from lib import binheap
 
-pq: BinHeapPQ[str] = BinHeapPQ()
+pq = binheap.PriorityQueue[str]()
 pq.push((5, "one"))
 print(pq)
 pq.push((2, "two"))

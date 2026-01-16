@@ -11,7 +11,10 @@
   - [ ] bst
   - [ ] avl tree
   - [ ] red-black tree
+  - [ ] splay tree
+  - [ ] treap
   - [ ] trie
+  - [ ] suffix tree
   - [ ] radix tree
   - [ ] b-tree
   - [ ] b+ tree
@@ -23,6 +26,12 @@
 
 ## a
 
+- string searching
+  - [ ] knuth-morris-pratt (kmp)
+  - [ ] boyer–moore
+  - [ ] rabin-karp
+  - [ ] string hashing
+  - [ ] manacher's (longest palidromic substr)
 - sorting
   - [ ] merge sort
   - [ ] quick sort
