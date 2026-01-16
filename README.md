@@ -26,8 +26,12 @@
 
 ## a
 
-- string searching
+- [ ] binary search
+- [ ] huffman coding
+- [ ] arithmetic coding
+- str searching
   - [ ] knuth-morris-pratt (kmp)
+  - [ ] aho-corasick
   - [ ] boyer–moore
   - [ ] rabin-karp
   - [ ] string hashing
@@ -43,9 +47,11 @@
   - [ ] topological sort
   - [ ] kosaraju's
   - [ ] tarjan's
+  - [ ] kruskal's
+  - [ ] prim's
 - shortest path
-  - [ ] sp-dag
   - [ ] bfs
+  - [ ] sortest path dag
   - [ ] dijkstra's
   - [ ] bellman-ford
   - [ ] floyd-warshall
