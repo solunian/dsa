@@ -2,7 +2,7 @@
 
 ## ds
 
-- [ ] linked list
+- [x] linked list
 - [ ] doubly linked list
 - [ ] deque (stack/queue)
 - [ ] min stack
