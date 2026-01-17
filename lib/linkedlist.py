@@ -88,6 +88,7 @@ class LinkedList[T]:
 
         self._len += 1
 
+    # self consumes other
     def extend(self, other: Self):
         if self._tail is None:
             self._head = other._head
