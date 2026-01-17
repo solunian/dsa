@@ -39,7 +39,7 @@
 - sorting
   - [ ] merge sort
   - [ ] quick sort
-  - [ ] heap sort
+  - [x] heap sort
   - [ ] counting sort
   - [ ] radix sort
 - graphs
