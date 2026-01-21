@@ -1,6 +1,6 @@
-from lib import binheap
+from ds.binheap import PriorityQueue
 
-pq = binheap.PriorityQueue[str]()
+pq = PriorityQueue[int, str]()
 pq.push((5, "one"))
 print(pq)
 pq.push((2, "two"))

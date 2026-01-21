@@ -1,4 +1,4 @@
-from lib.binheap import PriorityQueue
+from ds.binheap import PriorityQueue
 
 
 def heapsort[T](arr: list[T]):

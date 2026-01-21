@@ -1,5 +1,5 @@
 import random
-from lib.sort import heapsort
+from a.sort import heapsort
 
 # Generate a list of 10 random integers between 1 and 100
 random_integers = [random.randint(1, 20) for _ in range(10)]

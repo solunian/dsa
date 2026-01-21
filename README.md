@@ -56,3 +56,5 @@
   - [ ] bellman-ford
   - [ ] floyd-warshall
   - [ ] a\*
+- dp
+  - [] min number of coins

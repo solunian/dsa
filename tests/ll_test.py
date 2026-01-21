@@ -1,4 +1,4 @@
-from lib.linkedlist import LinkedList
+from ds.linkedlist import LinkedList
 
 ll = LinkedList[int]()
 

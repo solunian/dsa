@@ -1,5 +1,5 @@
 from typing import Self
-from lib.node import Node
+from ds.node import Node
 
 
 class LinkedList[T]:
