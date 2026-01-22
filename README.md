@@ -57,4 +57,4 @@
   - [ ] floyd-warshall
   - [ ] a\*
 - dp
-  - [] min number of coins
+  - [x] coin change i (min number of coins)
