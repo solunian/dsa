@@ -57,4 +57,6 @@
   - [ ] floyd-warshall
   - [ ] a\*
 - dp
-  - [x] coin change i (min number of coins)
+  - [x] coin change (min number of coins)
+  - [ ] traveling salesman problem (held-karp)
+  - [ ] knapsack problem
