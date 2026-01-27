@@ -29,6 +29,7 @@
 - [ ] binary search
 - [ ] huffman coding
 - [ ] arithmetic coding
+- [x] count inversions
 - str searching
   - [ ] knuth-morris-pratt (kmp)
   - [ ] aho-corasick
@@ -37,7 +38,7 @@
   - [ ] string hashing
   - [ ] manacher's (longest palidromic substr)
 - sorting
-  - [ ] merge sort
+  - [x] merge sort
   - [ ] quick sort
   - [x] heap sort
   - [ ] counting sort
