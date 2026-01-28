@@ -41,7 +41,7 @@
   - [ ] boyer–moore
   - [ ] rabin-karp
   - [ ] string hashing
-  - [ ] manacher's (longest palidromic substr)
+  - [ ] manacher's (longest palindromic substr)
   - [ ] edit distance (levenshtein distance)
 - sorting
   - [x] bubble sort
@@ -67,7 +67,7 @@
   - [ ] 4 coloring
 - shortest path
   - [ ] bfs
-  - [ ] sortest path dag
+  - [ ] shortest path dag
   - [ ] dijkstra's
   - [ ] bellman-ford
   - [ ] floyd-warshall
