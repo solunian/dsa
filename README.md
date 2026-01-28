@@ -30,13 +30,19 @@
 - [ ] huffman coding
 - [ ] arithmetic coding
 - [x] count inversions
-- str searching
+- [ ] generate primes (sieve of eratosthenes)
+- [ ] interval scheduling
+- [ ] job scheduling
+- str
+  - [ ] longest common substr
+  - [ ] longest common subsequence (lcs)
   - [ ] knuth-morris-pratt (kmp)
   - [ ] aho-corasick
   - [ ] boyer–moore
   - [ ] rabin-karp
   - [ ] string hashing
   - [ ] manacher's (longest palidromic substr)
+  - [ ] edit distance (levenshtein distance)
 - sorting
   - [x] bubble sort
   - [x] selection sort
@@ -46,6 +52,8 @@
   - [x] heap sort
   - [ ] counting sort
   - [ ] radix sort
+  - [ ] tim sort
+  - [ ] power sort
 - graphs
   - [ ] dfs
   - [ ] topological sort
@@ -53,6 +61,10 @@
   - [ ] tarjan's
   - [ ] kruskal's
   - [ ] prim's
+  - [ ] bipartiteness/2-coloring
+  - [ ] greedy approx graph coloring (welsh-powell)
+  - [ ] 5 coloring
+  - [ ] 4 coloring
 - shortest path
   - [ ] bfs
   - [ ] sortest path dag
@@ -61,6 +73,7 @@
   - [ ] floyd-warshall
   - [ ] a\*
 - dp
+  - [x] fibonacci sequence (rec, iter, binet's)
   - [x] coin change (min number of coins)
   - [ ] traveling salesman problem (held-karp)
-  - [ ] knapsack problem
+  - [ ] 0/1 knapsack problem
