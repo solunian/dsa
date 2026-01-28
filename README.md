@@ -38,6 +38,9 @@
   - [ ] string hashing
   - [ ] manacher's (longest palidromic substr)
 - sorting
+  - [x] bubble sort
+  - [x] selection sort
+  - [x] insertion sort
   - [x] merge sort
   - [ ] quick sort
   - [x] heap sort
