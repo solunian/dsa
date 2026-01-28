@@ -1,6 +1,8 @@
 from lib.generics import Comparable
 from ds.binheap import PriorityQueue
 
+import heapq
+
 
 # bubble largest up (sorted right first)
 def bubble_sort[T: Comparable](arr: list[T]):
@@ -27,16 +29,15 @@ def selection_sort[T: Comparable](arr: list[T]):
         arr[i], arr[smallest] = arr[smallest], arr[i]
 
 
-# insert to the right (sorted left first)
+# insert to the left (sorted left first)
 def insertion_sort[T: Comparable](arr: list[T]):
-    for i in range(len(arr)):
+    for i in range(1, len(arr)):
         tmp = arr[i]
-        for j in range(i + 1, len(arr)):
-            if tmp > arr[j]:
-                arr[j - 1] = arr[j]
-            else:
-                arr[j] = tmp
-                break
+        j = i
+        while j > 0 and tmp < arr[j - 1]:
+            arr[j] = arr[j - 1]
+            j -= 1
+        arr[j] = tmp
 
 
 def merge_sort[T: Comparable](arr: list[T]) -> list[T]:
@@ -77,3 +78,11 @@ def heap_sort[T: Comparable](arr: list[T]):
 
     for i in range(len(arr)):
         arr[i] = pq.pop()
+
+
+def heap_sort2[T: Comparable](arr: list[T]):
+    pq = arr.copy()
+    heapq.heapify(pq)
+
+    for i in range(len(arr)):
+        arr[i] = heapq.heappop(pq)
