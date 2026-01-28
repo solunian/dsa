@@ -5,7 +5,7 @@
 - [x] linked list
 - [ ] doubly linked list
 - [ ] deque (stack/queue)
-- [ ] min stack
+- [x] min stack
 - [ ] union-find/disjoint-set
 - tree
   - [ ] bst
