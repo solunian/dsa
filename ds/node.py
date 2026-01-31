@@ -32,12 +32,12 @@ class BinaryNode[T]:
         self.left = left
         self.right = right
 
-    # in-order iter!
+    # pre-order iter!
     def __iter__(self):
-        yield self.val
-
         if self.left is not None:
             yield from self.left
+
+        yield self.val
 
         if self.right is not None:
             yield from self.right

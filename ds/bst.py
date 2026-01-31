@@ -6,11 +6,11 @@ from ds.node import BinaryNode
 # add, contains, remove: worst case O(n)
 class BSTSet[T: Comparable]:
     def __init__(self):
-        self.root: BinaryNode[T] | None = None
+        self._root: BinaryNode[T] | None = None
 
     def __str__(self):
-        if self.root is not None:
-            return str(list(self.root))
+        if self._root is not None:
+            return str(list(self._root))
         else:
             return str([])
 
@@ -30,10 +30,10 @@ class BSTSet[T: Comparable]:
                     rec_add(curr.right, node)
 
         new_node = BinaryNode(x, None, None)
-        if self.root is None:
-            self.root = new_node
+        if self._root is None:
+            self._root = new_node
         else:
-            rec_add(self.root, new_node)
+            rec_add(self._root, new_node)
 
     def __contains__(self, x: T) -> bool:
         def find(root: BinaryNode[T] | None, val: T) -> BinaryNode[T] | None:
@@ -47,13 +47,14 @@ class BSTSet[T: Comparable]:
             else:
                 return find(root.right, val)
 
-        node = find(self.root, x)
+        node = find(self._root, x)
         return node is not None
 
     def remove(self, x: T):
         def rec_remove(root: BinaryNode[T] | None, val: T):
+            # case: not found. hits None before finding val
             if root is None:
-                return None
+                raise KeyError("key x not in set")
 
             if val == root.val:
                 # case: 0 or 1 children
@@ -69,7 +70,6 @@ class BSTSet[T: Comparable]:
 
                 root.val = succ.val  # set successor to value of the root
                 root.right = rec_remove(root.right, succ.val)  # delete successor node
-
             elif val < root.val:
                 root.left = rec_remove(root.left, val)
             else:
@@ -77,4 +77,4 @@ class BSTSet[T: Comparable]:
 
             return root
 
-        self.root = rec_remove(self.root, x)
+        self._root = rec_remove(self._root, x)
