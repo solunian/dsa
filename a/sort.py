@@ -1,5 +1,5 @@
-from lib.generics import Comparable
-from ds.binheap import PriorityQueue
+from lib.generics import Comparable, ComparableHashable
+from ds.binheap import HashedPriorityQueue, PriorityQueue
 
 import heapq
 
@@ -72,17 +72,27 @@ def merge_sort[T: Comparable](arr: list[T]) -> list[T]:
 
 
 def heap_sort[T: Comparable](arr: list[T]):
-    pq = PriorityQueue()
+    pq = PriorityQueue[T]()
     for val in arr:
-        pq.push((val, val))
+        pq.push(val)
 
     for i in range(len(arr)):
         arr[i] = pq.pop()
 
 
-def heap_sort2[T: Comparable](arr: list[T]):
-    pq = arr.copy()
-    heapq.heapify(pq)
+def hashed_heap_sort[T: ComparableHashable](arr: list[T]):
+    pq = HashedPriorityQueue[T, T]()
+    for val in arr:
+        pq.push(val, val)
+
+    for i in range(len(arr)):
+        arr[i] = pq.pop()
+
+
+def heapq_heap_sort[T: Comparable](arr: list[T]):
+    pq = []
+    for val in arr:
+        heapq.heappush(pq, val)
 
     for i in range(len(arr)):
         arr[i] = heapq.heappop(pq)

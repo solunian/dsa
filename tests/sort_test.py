@@ -10,7 +10,8 @@ sorts = {
     "insertion": sort.insertion_sort,
     "merge": sort.merge_sort,
     "heap": sort.heap_sort,
-    "heap (with heapq)": sort.heap_sort2,
+    "hashed heap": sort.hashed_heap_sort,
+    "heap (with heapq)": sort.heapq_heap_sort,
     "python builtin sort": list.sort,
 }
 

@@ -1,26 +1,26 @@
-from ds.binheap import PriorityQueue
+from ds.binheap import HashedPriorityQueue
 
-pq = PriorityQueue[int, str]()
-pq.push((5, "one"))
+pq = HashedPriorityQueue[int, str]()
+pq.push(5, "one")
 print(pq)
-pq.push((2, "two"))
+pq.push(2, "two")
 print(pq)
-pq.push((3, "three"))
+pq.push(3, "three")
 print(pq)
 
-pq.push((4, "four"))
+pq.push(4, "four")
 print(pq)
 
 pq.update_key("two", 6)
 print(pq)
 
-pq.push((10, "five"))
-pq.push((3, "six"))
+pq.push(10, "five")
+pq.push(3, "six")
 print(pq)
 
-pq.push((8, "seven"))
-pq.push((9, "eight"))
-pq.push((5, "nine"))
+pq.push(8, "seven")
+pq.push(9, "eight")
+pq.push(5, "nine")
 
 print(pq)
 
