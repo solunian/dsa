@@ -2,13 +2,14 @@
 
 ## ds
 
+- [x] vector
 - [x] linked list
 - [ ] doubly linked list
 - [ ] deque (stack/queue)
 - [x] min stack
 - [ ] union-find/disjoint-set
 - tree
-  - [ ] bst
+  - [x] bst
   - [ ] avl tree
   - [ ] red-black tree
   - [ ] splay tree

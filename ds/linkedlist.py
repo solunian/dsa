@@ -16,10 +16,8 @@ class LinkedList[T]:
         return self
 
     def __iter__(self):
-        curr = self._head
-        while curr is not None:
-            yield curr.val
-            curr = curr.next
+        if self._head is not None:
+            yield from self._head
 
     def __getitem__(self, i: int) -> T:
         if i < 0:  # negative indexing
