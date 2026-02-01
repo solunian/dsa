@@ -20,12 +20,12 @@ times = []
 
 for alg in sorts:
     arr = random_integers.copy()
-    s = time.process_time()
+    s = time.perf_counter()
     if alg == "merge":  # not in-place
         arr = sorts[alg](arr)
     else:
         sorts[alg](arr)
-    f = time.process_time()
+    f = time.perf_counter()
 
     correct = True
     for i in range(1, len(arr)):
