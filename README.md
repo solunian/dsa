@@ -49,7 +49,7 @@
   - [x] selection sort
   - [x] insertion sort
   - [x] merge sort
-  - [ ] quick sort
+  - [x] quick sort
   - [x] heap sort
   - [ ] counting sort
   - [ ] radix sort

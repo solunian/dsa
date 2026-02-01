@@ -12,6 +12,7 @@ sorts = {
     "heap": sort.heap_sort,
     "hashed heap": sort.hashed_heap_sort,
     "heap (with heapq)": sort.heapq_heap_sort,
+    "quick": sort.quick_sort,
     "python builtin sort": list.sort,
 }
 

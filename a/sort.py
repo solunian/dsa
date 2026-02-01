@@ -96,3 +96,29 @@ def heapq_heap_sort[T: Comparable](arr: list[T]):
 
     for i in range(len(arr)):
         arr[i] = heapq.heappop(pq)
+
+
+def quick_sort[T: Comparable](arr: list[T]):
+    # lomuto partition scheme, returns pivot index
+    def lomuto_partition(arr: list[T], lo: int, hi: int) -> int:
+        pivot = arr[hi]
+
+        i = lo
+        for j in range(lo, hi):
+            if arr[j] <= pivot:
+                arr[i], arr[j] = arr[j], arr[i]
+                i += 1
+
+        arr[i], arr[hi] = arr[hi], arr[i]
+        return i
+
+    def rec_quick_sort(arr: list[T], lo: int, hi: int):
+        if lo >= hi:
+            return
+
+        pivot = lomuto_partition(arr, lo, hi)
+
+        rec_quick_sort(arr, lo, pivot - 1)
+        rec_quick_sort(arr, pivot + 1, hi)
+
+    rec_quick_sort(arr, 0, len(arr) - 1)
