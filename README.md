@@ -56,8 +56,8 @@
   - [ ] tim sort
   - [ ] power sort
 - graphs
-  - [ ] dfs
-  - [ ] topological sort
+  - [x] dfs
+  - [x] topological sort
   - [ ] kosaraju's
   - [ ] tarjan's
   - [ ] kruskal's
