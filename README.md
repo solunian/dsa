@@ -58,7 +58,7 @@
 - graphs
   - [x] dfs
   - [x] topological sort
-  - [ ] kosaraju's
+  - [x] kosaraju's
   - [ ] tarjan's
   - [ ] kruskal's
   - [ ] prim's
