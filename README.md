@@ -76,5 +76,6 @@
 - dp
   - [x] fibonacci sequence (rec, iter, binet's)
   - [x] coin change (min number of coins)
+  - [ ] checking for cannonical currency denominations
   - [ ] traveling salesman problem (held-karp)
   - [ ] 0/1 knapsack problem
