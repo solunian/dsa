@@ -34,6 +34,11 @@
 - [ ] generate primes (sieve of eratosthenes)
 - [ ] interval scheduling
 - [ ] job scheduling
+- coin change
+  - [x] dp min coins
+  - [x] greedy min coins
+  - [x] check if denomination is canonical
+  - [x] find unproducible set (chicken mcnugget theorem/frobenius coin problem)
 - str
   - [ ] longest common substr
   - [ ] longest common subsequence (lcs)
@@ -75,7 +80,7 @@
   - [ ] a\*
 - dp
   - [x] fibonacci sequence (rec, iter, binet's)
-  - [x] coin change (min number of coins)
+  - [x] coin change
   - [ ] checking for cannonical currency denominations
   - [ ] traveling salesman problem (held-karp)
   - [ ] 0/1 knapsack problem
