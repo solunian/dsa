@@ -84,3 +84,4 @@
   - [ ] checking for cannonical currency denominations
   - [ ] traveling salesman problem (held-karp)
   - [ ] 0/1 knapsack problem
+  - [ ] subset sum
